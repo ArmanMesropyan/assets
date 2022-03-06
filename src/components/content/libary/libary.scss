@@ -242,15 +242,21 @@
                 align-self: center;
                
                 .horiz__child:nth-child(1){
-                    width: 100%;
+                    width: 60%;
                 }
 
                 .horiz__child:nth-child(2){
-                    
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
                     margin: 15px 0;
                     width: 100%;
                     .title__horiz{
                         width: 380px;
+                    }
+                    .download__lib__horiz{
+                        margin: 20px auto;
                     }
                 }
             }
@@ -280,6 +286,32 @@
     }
 
 }
+
+@media screen and (max-width:460px) and (min-width:320px) {
+    .libary{
+        .libary__content__wrapper__horizontal{
+            .libary__content__horizontal{
+                .horiz__child:nth-child(2){
+                 display: flex;
+                 flex-direction: column;
+                 align-items: center;
+                 justify-content: center;
+                    .title__horiz{
+                        width: 250px;
+                        
+                    }
+                    .download__lib__horiz{
+                        margin-left: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
 @media screen and (max-width:450px) {
     .libary{
         padding: 0 15px;
@@ -304,6 +336,7 @@
                 .horiz__child:nth-child(2){
                     .title__horiz{
                         width: 250px;
+                        
                     }
                 }
             }
@@ -311,4 +344,18 @@
     }
     
 
+}
+@media screen and (max-width:320px) {
+    .libary{
+        .libary__content__wrapper__horizontal{
+            .libary__content__horizontal{
+                .horiz__child:nth-child(2){
+                    .title__horiz{
+                        width: 220px;
+                        
+                    }
+                }
+            }
+        }
+    }
 }
