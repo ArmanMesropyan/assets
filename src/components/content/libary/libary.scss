@@ -172,6 +172,7 @@
         .libary__link{
             .libary__links{
                 flex-wrap: wrap;
+                align-items: center;
                 .libary__items{
                   margin: 25px;
                 }}}
@@ -266,6 +267,15 @@
             grid-template-rows: 1fr 1fr ;
          
         }
+        .libary__link{
+           
+              .libary__links{
+                 justify-content: center;
+                  .libary__items{
+                     
+                    margin: 13px ;
+                    text-align: center;
+                  }}}
 
     }
 
@@ -273,6 +283,17 @@
 @media screen and (max-width:450px) {
     .libary{
         padding: 0 15px;
+        .libary__link{
+          list-style: none;
+            .libary__links{
+                all: unset;
+                flex-wrap: wrap;
+                align-items: center;
+                .libary__items{
+                   
+                  margin: 10px 0;
+                  text-align: center;
+                }}}
         .libary__content__wrapper__vertical{
             grid-template-columns: 1fr    ;
             grid-template-rows: 1fr  ;

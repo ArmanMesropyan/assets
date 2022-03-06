@@ -98,6 +98,14 @@ header {
 		.util__icons{
 			display: flex;
 			justify-content: space-around;
+			.header__utils{
+				button{
+					border: none;
+					outline: none;
+					background-color: transparent;
+					cursor: pointer;
+				}
+			}
 		}
 		.bar{
 			
@@ -132,6 +140,11 @@ header {
 		padding: 0 120px;
 		grid-template-columns: 1fr 7fr ;
 		grid-template-rows: 12fr ;
+		.header__child:nth-child(3){
+			.util__icons{
+			
+				.header__utils{
+					width: 100px;}}}
 	}
 }
 @media screen and (max-width:1000px) {
@@ -139,6 +152,11 @@ header {
 		padding: 0 80px;
 		grid-template-columns: 1fr 2fr ;
 		grid-template-rows: 12fr ;
+		.header__child:nth-child(3){
+			.util__icons{
+			
+				.header__utils{
+					width: 100px;}}}
 		.header__lists {
 			list-style: none;
 			display: flex;
@@ -153,6 +171,7 @@ header {
 		padding: 0 60px;
 		grid-template-columns: 12fr  ;
 		grid-template-rows: 6fr 6fr ;
+		
 		.header__child:nth-child(1){
 			margin: 0 auto;
 		
@@ -164,6 +183,7 @@ header {
 @media screen and (max-width:700px) {
 	header{
 		padding: 0 50px;
+		
 		.bar{
 			display: block;
 			margin-left: 25px;
@@ -181,6 +201,23 @@ header {
 @media screen and (max-width:500px) {
 	header{
 		padding: 0 20px;
+		.header__child:nth-child(3){
+			flex-direction: column;
+			align-items: center;
+			.util__icons{
+				flex-direction: column;
+				.header__utils{
+					width: 100px;
+					button{
+						margin: 0 10px;
+					}
+				}
+			}
+			.bar{
+					margin-right: 30px;
+			}
+			
+		}
 	
 	}
 }
