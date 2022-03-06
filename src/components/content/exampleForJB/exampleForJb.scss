@@ -1,0 +1,117 @@
+.exp{
+    padding: 0 150px;
+}
+
+.example__for__jb{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+    .ex_child{
+        margin:  15px;
+        h6{
+            margin: 15px 0;
+            font-family: Noto Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 46px;
+            line-height: 63px;
+        }
+        p{
+            font-family: Noto Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 30px;
+        }
+        img{
+            width: 95%;
+            margin-left: 20px;
+        }
+      
+    }
+    .ex_child:nth-child(1){
+            width: 60%;
+    }
+    .ex_child:nth-child(2){
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .exp{
+        padding: 0 120px;
+        .example__for__jb{
+            align-items: center;
+            .ex_child:nth-child(1){
+                width: 60%;
+            }
+            .ex_child:nth-child(2){
+                width: 40%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+}
+@media screen and (max-width:1100px) {
+    .exp{
+        padding: 0 110px;
+    }
+
+}
+@media screen and (max-width:1000px) {
+    .exp{
+        padding: 0 100px;
+     
+      
+    }
+
+}
+@media screen and (max-width:940px) {
+    .exp{
+        padding: 0 80px;
+        .example__for__jb{
+            flex-direction: column;
+            .ex_child:nth-child(1){
+                width: 100%;
+            }
+            .ex_child:nth-child(2){
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+@media screen and (max-width:640px) {
+    .exp{
+        padding: 0 40px;
+      
+        .example__for__jb{
+        
+            .ex_child:nth-child(2){
+                width: 100%;
+                img{
+                    width: 90%;
+                }
+            }
+        }
+   
+    }
+
+}
+@media screen and (max-width:450px) {
+    .exp{
+        padding: 0 15px;
+   
+    }
+
+}

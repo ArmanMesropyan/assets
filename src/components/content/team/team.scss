@@ -1,0 +1,207 @@
+.team{
+    padding: 0 150px;
+    .team__title{
+        display: flex;
+        justify-content: space-between;
+        .tt__child{
+            display: flex;
+            flex-direction: column;
+            h6{
+                margin: 45px 0;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 64px;
+                line-height: 70px;
+            }
+            p{
+                font-family: Noto Sans;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 32px;
+            }
+            &:nth-child(2){
+                margin-top: 35px;
+            }
+            button {
+                width: 210px;
+                height: 50px;
+                background-color: #BC2E31;
+                color: white;
+                border: 2px solid #BC2E31;
+                margin: 15px 0;
+                cursor: pointer;
+                &:hover {
+                    background-color: transparent;
+                    color: black;
+                    border-color: black;
+                    transition: all 0.5s ease;
+                }
+                &:nth-child(2) {
+                    background-color: transparent;
+                    color: black;
+                    border-color: black;
+                    &:hover {
+                        background-color: #BC2E31;
+                        color: white;
+                        border: 2px solid #BC2E31;
+                        transition: all 0.5s ease;
+                    }
+                }
+            }
+        }
+    }
+    .team__cover{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+    .team__content{
+        h6{
+            font-size: 22px;
+            margin: 45px 0;
+        }
+        p{
+            width: 85%;
+        }
+    }
+   
+}
+.team__peoples{
+    padding: 0 150px;
+    background-color: rgb(247,247,247);
+    margin-top: 100px;
+    display: grid;
+    grid-gap: 55px;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    .peoples{
+        width: 358px;
+        height: 400px;
+        margin: 35px 0;
+        .p__img{
+            width: 100%;
+            height: 80%;
+            margin: 15px 0;
+            img{
+                width: 100%;
+                height: 100%;
+               
+               
+            }
+        }
+        
+        b{
+            
+            font-family: Noto Sans;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 28px;
+            
+        }
+        p{
+            margin-top: 5px;
+            font-family: Noto Sans;
+            font-style: italic;
+            font-weight: normal;
+            font-size: 20px;
+           
+        }
+    }
+}
+
+
+
+
+
+@media screen and (max-width:1200px) {
+    .team , .team__peoples{
+        padding: 0 120px;
+    }
+
+}
+@media screen and (max-width:1100px) {
+    .team , .team__peoples{
+        padding: 0 110px;
+    }
+
+}
+@media screen and (max-width:1000px) {
+    .team , .team__peoples{
+        padding: 0 100px;
+       
+      
+    }
+
+}
+@media screen and (max-width:940px) {
+    .team , .team__peoples{
+        padding: 0 80px;
+    
+    }
+    .team__peoples{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        place-items: center;
+    }
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width:640px) {
+    .team , .team__peoples{
+        padding: 0 40px;
+        .team__title{
+            .tt__child{
+                h6{
+                    font-size: 28px;
+                }
+                button{
+                    width: 170px;
+                    height: 40px;
+                }
+            }
+            
+        }
+        .team__content{
+            p{
+                width: 100%;
+            }
+        }
+     
+    }
+
+}
+@media screen and (max-width:450px) {
+    .team , .team__peoples{
+        padding: 0 15px;
+   
+    }
+    .team{
+        .team__title{
+            flex-direction: column;
+            align-items: center;
+            .tt__child{
+                h6{
+                    margin: 2px 0;
+                }
+                p{
+                    margin: 0;
+                }
+            }
+        }}
+    .team__peoples{
+        padding: 15px 0;
+        .peoples{
+            width: 250px;
+            height: 250px;
+        }
+    }
+}

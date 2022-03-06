@@ -1,0 +1,105 @@
+.Blog{
+    padding: 0 150px;
+    .blog__wrapp{
+        margin-top: 150px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .blog__child{
+            width: 300px;
+            margin: 25px 15px;
+            h6{
+                font-weight: bold;
+                font-size: 18px;
+                margin: 5px 0;
+            }
+            img{
+                width: 100%;
+            }
+            button{
+                width: 178px;
+                height: 38px;
+                border-radius: 5px;
+                background-color: #0F2857;
+                border: 1px solid #0F2857;
+                color: white;
+                font-weight: bolder;
+                cursor: pointer;
+                &:hover{
+                    transition: all 0.6 ease;
+                    border-color: black;
+                    background-color: rgb(240, 240, 240);
+                    color: black;
+                }
+            }
+        }
+    }
+    .seeMore{
+        margin-top: 30px;
+        text-align: center;
+        button{
+                width: 178px;
+                height: 38px;
+                background-color: white;
+                border: none;
+                border-bottom: 1px solid;
+                color: black;
+                font-weight: bolder;
+                cursor: pointer;
+                &:hover{
+                    background-color: rgb(212, 212, 212);
+                    transition: all 1s ease;
+                    border: 1px solid ;
+
+                }
+        }
+    }
+}
+
+
+
+
+
+@media screen and (max-width:1200px) {
+    .Blog{
+        padding: 0 120px;
+    }
+
+}
+@media screen and (max-width:1100px) {
+    .Blog{
+        padding: 0 110px;
+    }
+
+}
+@media screen and (max-width:1000px) {
+    .Blog{
+        padding: 0 100px;
+       
+    }
+
+}
+@media screen and (max-width:940px) {
+    .Blog{
+        padding: 0 80px;
+    
+    }
+
+}
+
+
+@media screen and (max-width:640px) {
+    .Blog{
+        padding: 0 40px;
+     
+   
+    }
+
+}
+@media screen and (max-width:450px) {
+    .Blog{
+        padding: 0 15px;
+   
+    }
+
+}

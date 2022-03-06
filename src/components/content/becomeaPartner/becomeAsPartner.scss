@@ -1,0 +1,93 @@
+.inputs{
+    padding: 20px 150px;
+    
+    
+    input{
+        width: 248px;
+        height: 44px;
+        background: #FFFFFF;
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        margin: 0 10px ;
+        &::placeholder{
+            font-size: 20px;
+            padding-left: 10px;
+        }
+    }
+    button{
+        margin: 5px;
+        color: white;
+        width: 101px;
+        height: 38px;
+        background-color: #892123;
+        border: 1.5px solid #892123;
+        font-family: Noto Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 33px;
+        cursor: pointer;
+        &:hover{
+            color: #0F2857;
+            background-color: transparent;
+            border: 1.5px solid black;
+            transition: all 0.6 ease;
+        }}
+}
+
+
+
+@media screen and (max-width:1200px) {
+    .inputs{
+        padding: 0 120px;
+   
+        
+    }
+
+}
+@media screen and (max-width:1100px) {
+    .inputs{
+        padding: 0 110px;
+    }
+
+}
+@media screen and (max-width:1000px) {
+    .inputs{
+        padding: 0 100px;
+     
+      
+    }
+
+}
+@media screen and (max-width:940px) {
+    .inputs{
+        padding: 0 80px;
+       
+      
+    }
+
+}
+
+
+
+@media screen and (max-width:640px) {
+    .inputs{
+        padding: 0 40px;
+      
+      input{
+          width: 180px;
+      }
+      button{
+          margin-left: 15px;
+      }
+   
+    }
+
+}
+@media screen and (max-width:450px) {
+    .inputs{
+        padding: 0 15px;
+   
+    }
+
+}

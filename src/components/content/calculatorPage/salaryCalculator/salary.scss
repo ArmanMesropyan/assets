@@ -1,0 +1,66 @@
+.salary{
+    margin: 55px 0;
+    .salary__header{
+        text-align: center;
+    }
+    .wrapper__salary{
+        margin: 0 auto;
+        border-radius: 15px;
+        width:550px;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        box-shadow: 1px 1px 19px 4px rgba(0,0,0,0.4);
+        background-color: rgba(255, 255, 255, 0.582);
+        .calc__cont{
+            text-align: center;
+
+            .pay__salary{
+                margin-top: 40px;
+                display: flex;
+                width: 300px;
+                justify-content: center;
+                h3{
+                   
+                    margin: 15px 5px;
+                }
+            }
+           
+            .inp__salary{
+                input{
+                   margin: 10px;
+                   border: none;
+                   border-bottom: 1px solid;
+                   outline: none;
+                }
+            }
+        }
+        
+    }
+}
+@media screen and (max-width:600px) {
+    .salary{
+        .wrapper__salary{
+            width:400px;
+        }
+    }
+   
+}
+@media screen and (max-width:450px) {
+    .salary{
+        .wrapper__salary{
+            width:300px;
+        }
+    }
+   
+}
+@media screen and (max-width:330px) {
+    .salary{
+        .wrapper__salary{
+            width:250px;
+        }
+    }
+   
+}

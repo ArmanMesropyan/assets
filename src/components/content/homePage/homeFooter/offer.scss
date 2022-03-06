@@ -1,0 +1,77 @@
+.hcf__offer{
+    h6{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 60px;
+        color: #999999;
+    }
+    p{
+        width: 70%;
+        font-family: Noto Sans JP;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 35px;
+        
+    }
+    .offer__btns{
+        display: flex;
+        flex-direction: column;
+        button{
+            width: 210px;
+            height: 50px;
+            background-color: #BC2E31;
+            color: white;
+            border: 2px solid #BC2E31;
+            margin: 10px 0;
+            cursor: pointer;
+            &:nth-child(2){
+                background-color: transparent;
+                color: black;
+                border-color: black;
+            }
+
+            &:hover{
+                background-color: transparent;
+                color: black;
+                border-color: black;
+                transition: all 0.5s ease;
+            }
+            &:nth-child(2):hover{
+
+                background-color: #BC2E31;
+                color: white;
+                border: 2px solid #BC2E31;
+                transition: all 0.5s ease;
+            }
+        }
+        
+    }
+}
+
+@media screen and (max-width:670px) {
+   
+        .hcf__offer{
+            h6{
+                font-size: 18px;
+            }
+            p{
+                font-size: 22px;
+            }
+   }
+}
+@media screen and (max-width:400px) {
+ 
+        .hcf__offer{
+            h6{
+                font-size: 15px;
+            }
+            p{
+                font-size: 18px;
+                width: 100%;
+            }
+        }
+  
+    
+}

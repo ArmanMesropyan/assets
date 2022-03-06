@@ -1,0 +1,73 @@
+.benefitCalculator{
+    margin-top: 65px;
+    h3{
+        text-align: center  ;
+        font-size: 35px;
+    }
+    .benefitCalculator__wrapper{
+        width: 400px;
+        margin: 0 auto;
+        
+        
+        .display{
+            background-color: #131a26;
+            padding: 16px;
+            color: white;
+            text-align: right;
+            font-size: 24px;
+            border-radius: 15px 15px 0  0 ;
+            span{
+                margin: 0 5px;
+                color: rgb(119, 119, 119);
+                font-size: 17px;
+            }
+           
+        }
+        .operators{
+                display: flex;
+                button{
+                    flex: 1 1 0%;
+                    background-color: rgb(209, 38, 81);
+                    font-weight: 700;
+                }
+        }
+        button{
+            appearance: none;
+            border: none;
+            outline: none;
+            color: #fff;
+            font-size: 20px;
+            padding: 16px;
+            cursor: pointer;
+            transition: 0.4s;
+            &:hover{
+                opacity: 0.9;
+            }
+        }
+        .numbers{
+            display: flex;
+            flex-wrap: wrap;
+            button{
+                flex: 1 1 33.333%;
+                max-width: 33.333%;
+                background-color: #131a26;
+            }
+        }
+    }
+}
+@media screen and (max-width:439px) {
+    .benefitCalculator{
+        margin-top: 65px;
+        .benefitCalculator__wrapper{
+            width: 300px;
+            margin: 0 auto;
+    }}
+}
+@media screen and (max-width:329px) {
+    .benefitCalculator{
+        margin-top: 65px;
+        .benefitCalculator__wrapper{
+            width: 250px;
+            margin: 0 auto;
+    }}
+}

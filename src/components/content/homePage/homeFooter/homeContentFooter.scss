@@ -1,0 +1,133 @@
+.homeContentFooter{
+    padding: 0 150px;
+    margin-bottom: 200px;
+ 
+    .hcf__clients{
+        margin-top: 85px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows:1fr 1fr 1fr;
+        
+        div{
+            width: 320px;
+            margin: 15px;
+            padding: 20px 10px ;
+            background-color:#F7F7F7;
+            img{
+                width: 100%;
+            }
+            
+        }
+    }
+    .hcf__commits{
+        .commit__text{
+            width: 70%;
+            font-family: Noto Sans JP;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 35px;
+        }
+        .hcf__commit__name{
+            font-family: Noto Sans;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 27px;
+        }
+        .hcf__commit__dev{
+            color: #999999;
+        }
+        .arrows{
+            margin-top: 25px;
+            display: flex;
+            align-items: center;
+            img{
+                margin: 0 30px ;
+            }
+
+        }
+    }
+    
+
+}
+@media screen and (max-width:1350px) {
+    .homeContentFooter{
+        padding: 0 55px;
+    }
+    
+}
+
+@media screen and (max-width:1250px) {
+    .homeContentFooter{
+        padding: 0 85px;
+        .hcf__clients{
+
+            grid-template-columns: 1fr 1fr  ;
+            grid-template-rows:1fr 1fr 1fr ;
+            
+        }
+    }
+    
+}
+@media screen and (max-width:950px) {
+    .homeContentFooter{
+        padding: 0 40px;
+        .hcf__clients{
+            div{
+                width: 300px;
+                margin: 10px;
+                padding: 40px 15px ;}}
+    }
+}
+@media screen and (max-width:790px) {
+    .homeContentFooter{
+        padding: 0 25px;
+        .hcf__clients{
+            div{
+                width: 250px;
+                margin: 15px;
+                padding: 40px 20px ;
+                background-color:#F7F7F7;
+            }
+        }
+    }
+    
+}
+@media screen and (max-width:670px) {
+    .homeContentFooter{
+        padding: 0 20px;
+        .hcf__clients{
+            grid-template-columns: 1fr ;
+            grid-template-rows:1fr 1fr 1fr 1fr ; 
+            place-items: center;
+        }
+        
+        .hcf__commits{
+            .commit__text{
+                width: 100%;
+                font-size: 22px;
+            }
+        }
+    } 
+}
+@media screen and (max-width:400px) {
+    .homeContentFooter{
+        padding: 0 25px;
+        .hcf__clients{
+            div{
+                width: 160px;
+                margin: 15px;
+                padding: 40px 20px ;
+                background-color:#F7F7F7;
+            }
+        }
+       
+        .hcf__commits{
+            .commit__text{
+                width: 100%;
+                font-size: 18px;
+            }
+        }
+    }
+    
+}

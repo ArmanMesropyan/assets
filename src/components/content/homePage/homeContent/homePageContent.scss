@@ -1,0 +1,122 @@
+.homePageContent{
+    .hpc{
+        padding: 0 150px;
+    }
+    
+    .hpc__title{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 60px;
+    }
+    .hpc__items{
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        place-items: center;
+        grid-template-rows: 1fr 1fr;
+        
+        margin: 55px 0 95px 0;
+        .item__cont{
+            width: 400px;
+            
+            .item__child{
+                &:nth-child(1){
+                    display: flex;
+                    align-items: center;
+                }
+                img{
+                    width: 58px;
+                    height: 50px;
+                    
+                }
+                b{
+                    font-family: Noto Sans;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 24px;
+                    margin-left: 25px;
+                }
+                p{
+                font-family: Noto Sans JP;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 15px;
+                line-height: 22px;
+                }
+            }
+         
+        }
+    }
+
+
+    .hpc__background{
+        width: 100%;
+        img{
+            width: 100%;
+          
+        }
+    }
+
+
+
+
+}
+@media screen and (max-width:960px) {
+    .homePageContent{
+        .hpc{
+            padding: 0 60px;
+          .hpc__items{
+            grid-template-columns: 1fr  ;
+            place-items: center;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-gap: 25px;
+            .item__cont{
+                width: 90%;
+                .item__child{
+                    b{
+                        font-size: 18px;
+                    }
+                }
+            }
+          }
+        }
+    }
+}
+
+@media screen and (max-width:760px) {
+    .homePageContent{
+        .hpc{
+            padding: 0 25px;
+          
+            .hpc__items{
+                .item__cont{
+                    .item__child{
+                    &:nth-child(1){
+                        flex-direction: column;
+                       b{
+                           margin: 25px 0;
+                       }
+                    }
+                    }
+                }
+              }
+        }
+    }
+}
+@media screen and (max-width:450px) {
+    .homePageContent{
+       
+        .hpc{
+            padding: 0;
+
+           
+            .hpc__title{
+                font-size: 16px;
+                margin-left: 20px;
+                line-height: normal;
+                font-weight: bolder;
+            }
+        }}
+}

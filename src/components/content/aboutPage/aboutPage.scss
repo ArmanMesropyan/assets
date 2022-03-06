@@ -1,0 +1,133 @@
+.aboutPage{
+    padding: 0 150px;
+    .about__news{
+        width: 100%;
+        
+        h6{
+            margin: 65px 0;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 50px;
+            line-height: 60px;
+        }
+        img{
+            width: 100%;
+           
+        }
+    }
+    .partner{
+        h6{
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 40px;
+            line-height: 50px;
+        }
+        .child__partner{
+            width: 100%;
+            margin: 95px 0;
+            display: flex;
+            .img__child__partner{
+                width: 50%;
+                margin: 15px 45px;
+                
+                img{
+                    width:100%;
+                  
+
+                }
+            }
+            .info__child__partner{
+                width: 40%;
+                p{
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 28px;
+                    color: #2d2d2d;
+                }
+                button{
+                    margin-top: 30px;
+                    width: 210px;
+                    height: 39px;
+                    border: 1px solid #0F2857 ;
+                    background-color: #0F2857;
+                    color: white;
+                    cursor: pointer;
+                    &:hover{
+                        border: 1px solid #0F2857 ;
+                        background-color: transparent;
+                        color: #0F2857;
+                        transition: all 0.5s ease;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:1200px) {
+    .aboutPage{
+        padding: 0 120px;
+    }
+
+}
+@media screen and (max-width:1100px) {
+    .aboutPage{
+        padding: 0 110px;
+    }
+
+}
+@media screen and (max-width:1000px) {
+    .aboutPage{
+        padding: 0 100px;
+        .partner{
+            .child__partner{
+                .img__child__partner{
+                   margin-top: 55px;
+                }
+            }
+        }
+    }
+
+}
+@media screen and (max-width:940px) {
+    .aboutPage{
+        padding: 0 80px;
+        .partner{
+            .child__partner{
+                flex-direction: column;
+                .img__child__partner{
+                    width: 100%;
+                   margin: 0%;
+                }
+                .info__child__partner{
+                    width: 100%;
+                    margin: 25px 10px;
+                }
+
+            }
+        }
+    }
+
+}
+@media screen and (max-width:640px) {
+    .aboutPage{
+        padding: 0 40px;
+        .about__news , .partner{  
+            h6{
+                font-size: 30px;
+            }}
+      
+   
+    }
+
+}
+@media screen and (max-width:450px) {
+    .aboutPage{
+        padding: 0 15px;
+   
+    }
+
+}

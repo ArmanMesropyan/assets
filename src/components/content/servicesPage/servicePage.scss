@@ -1,0 +1,101 @@
+.ServicesPage{
+    padding: 0 150px;
+    .sp__title{
+        h6{
+            margin: 65px 0;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 50px;
+            line-height: 60px;
+           
+        }
+    }
+    .sp__background{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+    .services__info{
+        display: flex;
+        margin-top: 55px;
+        justify-content: space-around;
+        
+        .services__info__item{
+            margin:  15px ;
+            padding: 7px;
+           
+            span{
+                display: flex;
+                align-items: center;
+                font-family: Noto Sans;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 38px;
+                line-height: 52px;
+
+                img{
+                    margin-right:  20px;
+                    width: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .ServicesPage{
+        padding: 0 120px;
+    }
+
+}
+@media screen and (max-width:1100px) {
+    .ServicesPage{
+        padding: 0 110px;
+    }
+
+}
+@media screen and (max-width:1000px) {
+    .ServicesPage{
+        padding: 0 100px;
+        .services__info{
+            flex-wrap: wrap;
+        }
+      
+    }
+
+}
+@media screen and (max-width:940px) {
+    .ServicesPage{
+        padding: 0 80px;
+    
+    }
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width:640px) {
+    .ServicesPage{
+        padding: 0 40px;
+        .sp__title{  
+            h6{
+                font-size: 30px;
+            }}
+      
+   
+    }
+
+}
+@media screen and (max-width:450px) {
+    .ServicesPage{
+        padding: 0 15px;
+   
+    }
+
+}

@@ -1,0 +1,110 @@
+.calculatorPage{
+    padding:  0 150px;
+    .calck__back{
+        margin-top: 50px;
+        position: relative;
+        width: 100%;
+        img{
+            border-radius: 5px;
+            width: 100%;
+        }
+        p{
+            position: absolute;
+            top: 30%;
+            right: 15%;
+            font-size: 50px;
+            mix-blend-mode: overlay;
+        }
+    }
+    .calc__links{
+        margin-top: 65px;
+        .list__calc{
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            .calc__item{
+                margin: 10px; 
+                cursor: pointer;
+                &:hover{
+                    color: #BC2E31;
+                    transition: 0.6s all ease;
+                }
+                a{
+                    text-decoration: none;
+                    color: black;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 21px;
+                    &:hover{
+                        color: #BC2E31;
+                        transition: 0.6s all ease;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width:1200px) {
+    .calculatorPage{
+        padding: 0 120px;
+    }
+}
+@media screen and (max-width:1100px) {
+    .calculatorPage{
+        padding: 0 110px;
+    }
+}
+@media screen and (max-width:1000px) {
+    .calculatorPage{
+        padding: 0 100px;    
+    }
+
+}
+@media screen and (max-width:940px) {
+    .calculatorPage{
+        padding: 0 80px;
+        .calck__back{
+            p{
+                
+                top: 30%;
+                right: 15%;
+                font-size: 30px;
+            }
+        }
+        .calc__links{
+            .list__calc{
+                flex-direction: column;
+                align-items: center;
+                .calc__item{
+                    border-bottom: 1px solid #BC2E31;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:640px) {
+    .calculatorPage{
+        padding: 0 40px;  
+   
+    }
+}
+@media screen and (max-width:450px) {
+    .calculatorPage{
+        padding: 0 15px;
+        .calck__back{
+            p{
+                
+                top: 30%;
+                right: 5%;
+                font-size: 20px;
+            }
+        }
+   
+    }
+}

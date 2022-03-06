@@ -1,0 +1,90 @@
+.buttons{
+    padding: 20px 150px;
+    
+    button{
+        margin: 5px 10px;
+        color: #0F2857;
+        width: 217px;
+        height: 38px;
+        background-color: transparent;
+        border: 1.5px solid black;
+        font-family: Noto Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 33px;
+        cursor: pointer;
+        &:hover{
+            background-color: #892123;
+            border-color: #892123;
+            color: white;
+            transition: all 0.6 ease;
+        }
+        &:nth-child(2){
+
+            width: 101px;
+            background-color: #892123;
+            border-color: #892123;
+            color: white;
+            &:hover{
+                color: #0F2857;
+                background-color: transparent;
+                border: 1.5px solid black;
+                transition: all 0.6 ease;
+            }
+
+        }
+    }
+    
+}
+
+
+@media screen and (max-width:1200px) {
+    .buttons{
+        padding: 0 120px;
+   
+        
+    }
+
+}
+@media screen and (max-width:1100px) {
+    .buttons{
+        padding: 0 110px;
+    }
+
+}
+@media screen and (max-width:1000px) {
+    .buttons{
+        padding: 0 100px;
+     
+      
+    }
+
+}
+@media screen and (max-width:940px) {
+    .buttons{
+        padding: 0 80px;
+       
+      
+    }
+
+}
+
+
+
+@media screen and (max-width:640px) {
+    .buttons{
+        padding: 0 40px;
+      
+      
+   
+    }
+
+}
+@media screen and (max-width:450px) {
+    .buttons{
+        padding: 0 15px;
+   
+    }
+
+}
